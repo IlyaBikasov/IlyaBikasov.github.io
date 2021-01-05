@@ -1,0 +1,431 @@
+body{
+	background: black;
+}
+
+header{
+	padding-left: 50px;
+	background-position: center;
+	background-image: url(../img/headerback.jpg);
+	height: 1086px;
+}
+
+#container{
+   margin: auto;
+	background: white;
+	width: 1198px;
+}
+
+.h1-header{
+	font-family: myriad-pro, sans-serif;
+	color: white;
+   font-size: 180px;
+   margin-bottom: 1px;
+}
+
+.h1-header:first-letter{
+	color: yellow;
+}
+
+.p-header{
+	font-family: myriad-pro, sans-serif;
+	color: white;
+}
+
+.p-header:first-letter{
+	color: yellow;
+}
+
+.h2-header{
+	font-family: myriad-pro, sans-serif;
+	font-size: 60px;
+	color: white;
+}
+
+.h2-header span{
+	color: yellow;
+}
+
+.a-nav,
+.a-nav1{
+	font-family: myriad-pro, sans-serif;
+	margin-right: 30px;
+	font-size: 20px;
+	text-decoration: none;
+	color: yellow;
+}
+
+.a-nav1{
+	margin-left: 380px;
+}
+
+.a-nav:hover,
+.a-nav1:hover{
+	color: white;
+	border-bottom: 1px solid yellow;
+}
+
+#about{
+	margin-top: 50px;
+}
+
+.h2-about{
+	margin-top: 60px;
+	float: left;
+	font-family: muli;
+	color: grey;
+	margin-left: 130px;
+	font-size: 25px;
+	border-bottom: 1px solid black;
+}
+
+.h2-about:first-letter{
+	font-size: 40px;
+}
+
+.h2-about span{
+	color: black;
+	font-size: 60px;
+}
+
+.h2-about span span{
+	color: yellow;
+}
+
+div.text-about{
+	margin-top: 30px;
+	float: right;
+	border-left: 1px solid black;
+	padding-left: 30px;
+	width: 611px;
+}
+
+.p-about span{
+	float: right;
+	font-family: muli;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+	margin-right: 3px;
+}
+
+.p-about{
+	font-family: muli;
+	font-size: 13px;
+	margin-right: 3px;
+}
+
+.app-dev{
+	font-family: muli;
+	float: left;
+	text-align: center;
+	margin-top: 80px;
+	margin-right: 80px;
+	margin-left: 115px;
+}
+
+.game-desing{
+	font-family: muli;
+	float: left;
+	text-align: center;
+	margin-right: 80px;
+	margin-top: 78px;
+}
+
+.cont-creat{
+	font-family: muli;
+	float: left;
+	text-align: center;
+	margin-top: 78px;
+}
+
+.app-dev h2,
+.game-desing h2,
+.cont-creat h2{
+	font-size: 20px;
+}
+
+.app-dev p,
+.game-desing p,
+.cont-creat p{
+	font-size: 10px;
+	font-style: italic;
+}
+
+.h2-projects{
+	font-family: muli;
+	font-size: 30px;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+.h2-projects:first-letter{
+	color: yellow;
+	font-size: 50px;
+}
+
+.h2-projects span{
+	font-size: 50px;
+}
+
+.owl-nav0{
+	color: black;
+	background: none;
+	border: none;
+	font-family: muli;
+	text-decoration: none;
+	margin-left: 100px;
+	font-size: 15px;
+}
+
+.owl-nav1,
+.owl-nav2,
+.owl-nav3{
+	color: black;
+	background: none;
+	border: none;
+	font-family: muli;
+	text-decoration: none;
+	font-size: 15px;
+	margin-left: 15px;
+}
+
+.owl-nav0:hover,
+.owl-nav1:hover,
+.owl-nav2:hover,
+.owl-nav3:hover{
+	border-bottom: 1px solid yellow; 
+}
+
+.owl-carousel{
+	margin-top: 15px;
+	width: 1198px;
+	height: 540px;
+	font-family: myriad-pro, sans-serif;
+}
+
+.game-1,
+.game-2,
+.game-3,
+.game-4,
+.game-5,
+.game-6{
+	text-align: center;
+	padding-top: 15px;
+	float: left;
+	margin-left: 224px;
+}
+
+.by-game,
+.get-programm{
+	margin-top: 15px;
+	color: black;
+	width: 100px;
+	height: 27px;
+	background: yellow;
+	border: 1px solid black;
+}
+
+.by-game:hover,
+.get-programm:hover{
+	color: black;
+	background: none;
+	border: 1px solid black;
+}
+
+#owl-apps{
+	text-align: center;
+	font-size: 30px;
+	margin-top: 250px;
+}
+
+.cont-dev{
+	text-align: center;
+	padding-top: 125px;
+	float: left;
+	margin-left: 199px;
+}
+
+#provided{
+	margin-top: 500px;
+	padding-top: 1px;
+	background-image: url(../img/servicesback.jpg);
+	height: 478px;
+}
+
+.h2-provided{
+	color: white;
+	font-family: muli;
+	font-size: 30px;
+	margin-left: 70px;
+	margin-top: 50px;
+}
+
+.h2-provided:first-letter{
+	color: yellow;
+	font-size: 50px;
+}
+
+.h2-provided span{
+	font-size: 50px;
+}
+
+.prov-text{
+	float: right;
+	margin-right: 100px;
+}
+
+.prov-text h2{
+	color: white;
+	font-family: muli;
+	font-size: 20px;
+}
+
+.prov-text p{
+	color: white;
+	font-family: muli;
+	font-size: 13px;
+}
+
+#contact{ 
+	padding-top: 30px;
+	background-image: url(../img/contactsback.jpg);
+	height: 654px;
+}
+
+.h2-cont{
+	width: 190px;
+	color: white;
+	font-family: muli;
+	font-size: 30px;
+	margin-left: 600px;
+	border-bottom: 1px solid white;
+}
+
+.h2-cont:first-letter{
+	color: yellow;
+	font-size: 50px;
+}
+
+.h2-cont span{
+	font-size: 50px;
+}
+
+.form-cont{
+	margin-left: 570px;
+}
+
+.name{
+	text-transform: capitalize;
+	color: white;
+	width: 450px;
+	height: 25px;
+	background: none;
+	border: none;
+	padding-left: 5px;
+	border: 1px solid white;
+}
+
+.mobile{
+	margin-top: 15px;
+	color: white;
+	width: 210px;
+	height: 25px;
+	background: none;
+	border: none;
+	padding-left: 5px;
+	border: 1px solid white;
+}
+
+.email{
+	margin-top: 15px;
+	color: white;
+	width: 210px;
+	height: 25px;
+	background: none;
+	border: none;
+	padding-left: 5px;
+	margin-left: 17px;
+	border: 1px solid white;
+}
+
+.message{
+	margin-top: 15px;
+	color: white;
+	width: 450px;
+	height: 300px;
+	background: none;
+	border: none;
+	padding-left: 5px;
+	border: 1px solid white;
+}
+
+.send{
+	margin-top: 15px;
+	color: blue;
+	width: 100px;
+	height: 27px;
+	background: yellow;
+	border: none;
+}
+
+.send:hover{
+	color: white;
+	background: none;
+	border: 1px solid white;
+}
+
+footer{
+	padding-left: 30px;
+	padding-top: 50px;
+	height: 604px;
+	background-image: url(../img/footerback.jpg);
+}
+
+.left-footer{
+	float: left;
+}
+
+.h2-footer{
+	font-family: myriad-pro, sans-serif;
+	color: white;
+	font-size: 60px;
+}
+
+.h2-footer:first-letter{
+	color: yellow;
+}
+
+.f-nav{
+	font-family: muli;
+	color: white;
+	text-decoration: none;
+}
+
+.f-nav:hover{
+	color: yellow;
+	border-bottom: 1px solid white;
+}
+
+.links{
+	width: 100px;
+	border-top: 1px solid yellow;
+	margin-top: 200px;
+	padding-top: 10px;
+}
+
+.links a.link{
+	margin-right: 3px;
+}
+
+.h1-footer{
+	color: white;
+	font-family: myriad-pro, sans-serif;
+	font-size: 100px;
+	float: right;
+	margin-right: 100px;
+	margin-top: 250px;
+}
+
+.h1-footer span{
+	color: yellow;
+}

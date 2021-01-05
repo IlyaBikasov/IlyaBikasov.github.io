@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Sublime
+	</title>
+	<link rel="stylesheet" href="css/style1.css">	
+	<link rel="stylesheet" href="https://use.typekit.net/eyn2fup.css">
+	<link rel="stylesheet" href="https://use.typekit.net/cov7kvd.css">
+</head>
+
+<?php
+	require_once("PHP/connection.php");
+	$link = mysqli_connect($host, $user, $pass, $database)
+		or die("ERROR".mysqli_error($link));
+	mysqli_close($link);
+?>
+
+<body>
+
+	<a href="index.html">Back to home</a>
+	
+	<?php
+	   require_once("PHP/connection.php");
+	   if (isset($_POST["userMail"]) && isset($_POST["userName"]) && isset($_POST["userPass"])) {
+		   $link = mysqli_connect($host, $user, $pass, $database)
+		      or die("ERROR".mysqli_error($link));
+
+	   };
+   ?>
+
+	<form class="sing-In" method="POST">
+		<input class="userName" type="text" name="userName"><br>
+		<input class="userPass" type="text" name="userPass"><br>
+		<input class="send" type="submit" value="Send">
+		<a href="singApp.html">Create account</a>
+	</form>
+</body>
+</html>

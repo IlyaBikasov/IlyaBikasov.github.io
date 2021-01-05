@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Sublime
+	</title>
+	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="https://use.typekit.net/eyn2fup.css">
+	<link rel="stylesheet" href="https://use.typekit.net/cov7kvd.css">
+
+	<link rel="stylesheet" href="libs/owl_carousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl_carousel/assets/owl.theme.default.css">
+
+	<script src="libs/jQuery/jQuery.js"></script>
+	<script src="libs/owl_carousel/owl.carousel.js"></script>
+
+	<script src="js/main.js"></script>
+</head>
+
+<?php
+	require_once("PHP/connection.php");
+	$link = mysqli_connect($host, $user, $pass, $database)
+		or die("ERROR".mysqli_error($link));
+	mysqli_close($link);
+?>
+
+<body>
+	<div id="container">
+		<!--Сделать личный кабинет и балланс аккаунта-->
+		<header id="header">
+			<h1 class="h1-header">
+				Sublime
+			</h1>
+			<p class="p-header">
+				Sublime: A one page responsive wordpress theme<br>
+            suitable for any kind of business representation.
+			</p><br><br>
+			<h2 class="h2-header">
+				<span>We</span> create<br>
+            Awesome Games
+			</h2>
+			<a href="#projects" class="a-nav">Projects</a>
+			<a href="#about" class="a-nav">About</a>
+			<a href="#provided" class="a-nav">Provided</a>
+			<a href="#contact" class="a-nav">Contacts Us</a>
+
+			<a href="#" class="a-nav1">All Games</a>
+			<a href="singApp.html" class="a-nav">Sing in/Sing app</a>
+		</header>
+
+      <!--Сделать листающееся в лево - право меню-->
+		<div id="projects">
+			<h2 class="h2-projects">
+				Featured <span>P</span>rojects
+			</h2>
+			<a class="owl-nav0" href="#projects">GAMES</a>
+			<a class="owl-nav1" href="#projects">ALLWORKS</a>
+			<a class="owl-nav2" href="#projects">APLICATIONS</a>
+			<a class="owl-nav3" href="#projects">CONTENT DEVELOPMENT</a>
+
+			<div class="owl-carousel owl-theme">
+				<div id="owl-games">
+					<div class="game-1">
+						<h2>Game 1</h2>
+						<img src="img/gameIcon.png">
+						<input class="by-game" type="button" value="$999">
+					</div>
+					<div class="game-2">
+						<h2>Game 2</h2>
+						<img src="img/gameIcon.png">
+						<input class="by-game" type="button" value="$999">
+					</div>
+					<div class="game-3">
+						<h2>Game 3</h2>
+						<img src="img/gameIcon.png">
+						<input class="by-game" type="button" value="$999">
+					</div>
+					<div class="game-4">
+						<h2>Game 4</h2>
+						<img src="img/gameIcon.png">
+						<input class="by-game" type="button" value="$999">
+					</div>
+					<div class="game-5">
+						<h2>Game 5</h2>
+						<img src="img/gameIcon.png">
+						<input class="by-game" type="button" value="$999">
+					</div>
+					<div class="game-6">
+						<h2>Game 6</h2>
+						<img src="img/gameIcon.png">
+						<input class="by-game" type="button" value="$999">
+					</div>
+				</div>
+
+				<div id="owl-galery">
+					<img src="img/Gallerysection.jpg" class="galery">
+				</div>
+
+				<div id="owl-apps">
+					Dont applications
+				</div>
+
+				<div id="owl-cd">
+					<div class="cont-dev">
+						<h2>Programm 1</h2>
+						<img src="img/cont-dev.png" >
+						<input class="get-programm" type="button" value="Download">
+					</div>
+					<div class="cont-dev">
+						<h2>Programm 2</h2>
+						<img src="img/cont-dev.png">
+						<input class="get-programm" type="button" value="Download">
+					</div>
+					<div class="cont-dev">
+						<h2>Programm 3</h2>
+						<img src="img/cont-dev.png">
+						<input class="get-programm" type="button" value="Download">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="about">
+			<h2 class="h2-about">
+				About<br>
+				<span><span>S</span>ublime</span>
+			</h2>
+			<div class="text-about">
+				<p class="p-about">
+					<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisis molestie dignissim. Nulla<br>
+					pellentesque et nisi et euismod. Pellentesque quis tristique magna.</span><br><br><br><br>
+					Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,<br>
+					molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim<br>
+					gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.<br>
+					Maecenas est risus, tristique volutpat sagittis vel, feugiat consectetur diam. Suspendisse justo sem,<br>
+					molestie tincidunt rhoncus vel, molestie ut ligula. Mauris vitae ullamcorper odio. Mauris id enim<br>
+					gravida, tempor velit non, vehicula lacus. Sed rutrum tempus urna, sed aliquam lectus egestas eu.<br>
+				</p>
+			</div><br>
+			<div class="app-dev" id="dev">
+				<img src="img/abouticon.png">
+				<h2>
+					App Development
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+					Nulla facilisis molestie dignissim. Nulla pellentesque et nisi<br>
+					et euismod. Pellentesque quis tristique magna.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+					Nulla facilisis molestie dignissim. Nulla pellentesque et nisi<br>
+					et euismod. Pellentesque quis tristique magna.
+				</p>
+			</div>
+			<div class="game-desing">
+				<img src="img/abouticon.png">
+				<h2>
+					Game Desing
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+					Nulla facilisis molestie dignissim. Nulla pellentesque et nisi<br>
+					et euismod. Pellentesque quis tristique magna.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+					Nulla facilisis molestie dignissim. Nulla pellentesque et nisi<br>
+					et euismod. Pellentesque quis tristique magna.
+				</p>
+			</div>
+			<div class="cont-creat">
+				<img src="img/abouticon.png">
+				<h2>
+					Content Creation
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+					Nulla facilisis molestie dignissim. Nulla pellentesque et nisi<br>
+					et euismod. Pellentesque quis tristique magna.
+				</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+					Nulla facilisis molestie dignissim. Nulla pellentesque et nisi<br>
+					et euismod. Pellentesque quis tristique magna.
+				</p>
+			</div>
+		</div>
+
+		<div id="provided">
+			<h2 class="h2-provided">
+				Servise <span>P</span>rovided
+			</h2>
+			<div class="prov-text">
+				<h2>
+					Game Development
+				</h2>
+				<p>
+					Maecenas est risus, tristique volutpat sagittis vel,<br>
+				   feugiat consectetur diam. Suspendisse justo sem,<br>
+				   molestie tincidunt. Maecenas est risus, tristique<br>
+				   volutpat sagittis vel, feugiat consectetur diam.<br>
+				   Suspendisse justo sem, molestie tincidunt.
+				</p><br><br>
+				<h2>
+					Game Desing
+				</h2>
+				<p>
+					Maecenas est risus, tristique volutpat sagittis vel,<br>
+				   feugiat consectetur diam. Suspendisse justo sem,<br>
+				   molestie tincidunt. Maecenas est risus, tristique<br>
+				   volutpat sagittis vel, feugiat consectetur diam.<br>
+				   Suspendisse justo sem, molestie tincidunt.
+				</p>
+			</div>
+			<div class="prov-text">
+				<h2>
+					App Development
+				</h2>
+				<p>
+					Maecenas est risus, tristique volutpat sagittis vel,<br>
+				   feugiat consectetur diam. Suspendisse justo sem,<br>
+				   molestie tincidunt. Maecenas est risus, tristique<br>
+				   volutpat sagittis vel, feugiat consectetur diam.<br>
+				   Suspendisse justo sem, molestie tincidunt.
+				</p><br><br>
+				<h2>
+					App Desing
+				</h2>
+				<p>
+					Maecenas est risus, tristique volutpat sagittis vel,<br>	
+				   feugiat consectetur diam. Suspendisse justo sem,<br>
+				   molestie tincidunt. Maecenas est risus, tristique<br>
+				   volutpat sagittis vel, feugiat consectetur diam.<br>
+				   Suspendisse justo sem, molestie tincidunt.
+				</p>
+			</div>
+		</div>
+
+		<div id="contact">
+			<h2 class="h2-cont">
+				Contact <span>U</span>s
+			</h2>
+			<form class="form-cont">
+				<input type="text" class="name" placeholder="Your Name"><br>
+				<input type="mobile" class="mobile" placeholder="Mobile">
+				<input type="email" class="email" placeholder="Email"><br>
+				<textarea class="message" placeholder="Your Message"></textarea><br>
+				<input type="button" class="send" value="SEND">
+			</form>
+		</div>
+
+		<footer>
+			<div class="left-footer">
+				<h2 class="h2-footer">
+				   Sublime
+			   </h2>
+			   <a href="#header" class="f-nav">HOME</a><br><br>
+			   <a href="#projects" class="f-nav">PROJECTS</a><br><br>
+			   <a href="#about" class="f-nav">ABOUT SUBLIME</a><br><br>
+			   <a href="#provided" class="f-nav">PROVIDED</a><br><br>
+			   <a href="#contact" class="f-nav">CONTACT US</a><br>
+			   <div class="links">
+				   <a href="https://twitter.com/explore" class="link" target="_blank"><img src="img/twitter.png"></a>
+			      <a href="https://www.instagram.com/?hl=ru" class="link" target="_blank"><img src="img/in.png"></a>
+			      <a href="https://www.facebook.com" class="link" target="_blank"><img src="img/facebook.png"></a>
+			   </div>
+			</div>
+			<h1 class="h1-footer">
+				<span>We</span> create<br>
+				Awesome Games
+			</h1>
+		</footer>
+	</div>
+</body>
+</html>

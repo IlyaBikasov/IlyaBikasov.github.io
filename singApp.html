@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		Sublime
+	</title>
+	<link rel="stylesheet" href="css/style1.css">	
+	<link rel="stylesheet" href="https://use.typekit.net/eyn2fup.css">
+	<link rel="stylesheet" href="https://use.typekit.net/cov7kvd.css">
+</head>
+
+<?php
+	require_once("PHP/connection.php");
+	$link = mysqli_connect($host, $user, $pass, $database)
+		or die("ERROR".mysqli_error($link));
+	mysqli_close($link);
+?>
+
+<body>
+
+	<a href="index.html">Back to home</a>
+	
+	<?php
+	   require_once("PHP/connection.php");
+	   if (isset($_POST["userMail"]) && isset($_POST["userName"]) && isset($_POST["userPass"])) {
+		   $link = mysqli_connect($host, $user, $pass, $database)
+		      or die("ERROR".mysqli_error($link));
+
+	      $userMail = htmlentities(mysqli_real_escape_string($link, $_POST["userMail"]));
+	      $userName = htmlentities(mysqli_real_escape_string($link, $_POST["userName"]));
+	      $userPass = htmlentities(mysqli_real_escape_string($link, $_POST["userPass"]));
+
+	      $query = "INSERT INTO users VALUES(NULL, '$userMail', '$userName', '$userPass', '0')";
+	      $result = mysqli_query($link, $query)
+		      or die("ERROR ".mysqli_error($link));
+
+	      mysqli_close($link);
+	   };
+   ?>
+
+	<form class="sing-In" method="POST">
+		<input class="userMail" type="text" name="userMail" placeholder="Mail"><br>
+		<input class="userName" type="text" name="userName" placeholder="User Name (Max 10 letters)"><br>
+		<input class="userPass" type="text" name="userPass" placeholder="Password (Max 15 letters)"><br>
+		<input class="send" type="submit" value="Send">
+		<a href="singIn.html">Login to account</a>
+	</form>
+</body>
+</html>
